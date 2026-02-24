@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2c1810 0%, #4a2c1a 50%, #8b4513 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 420px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b4423;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a2c1a;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #d4af37;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #b8860b;
+    box-shadow: 0 0 15px rgba(184, 134, 11, 0.3);
+    transform: translateY(-2px);
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #8b4513;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.forgot-password:hover {
+    color: #b8860b;
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+    color: #2c1810;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+}
+
+.cadastro-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #4a2c1a;
+    font-size: 14px;
+}
+
+.cadastro-link a {
+    color: #8b4513;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.cadastro-link a:hover {
+    color: #b8860b;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 25px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+}

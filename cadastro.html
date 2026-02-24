@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Barbearia</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <h1>JVHG Babers</h1>
+            <p class="subtitle">Cadastre-se para agendamentos e promoções</p>
+            
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone/WhatsApp:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="servico">Serviço preferido:</label>
+            <select id="servico" name="servico" required>
+                <option value="">Selecione...</option>
+                <option value="corte">Corte de cabelo</option>
+                <option value="barba">Barba</option>
+                <option value="combo">Corte + Barba</option>
+                <option value="navalha">Navalha</option>
+                <option value="degradê">Degradê</option>
+            </select>
+
+            <button type="submit">Agendar Agora</button>
+        </form>
+    </div>
+</body>
+</html>

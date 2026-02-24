@@ -14,6 +14,10 @@ body {
     padding: 20px;
 }
 
+.exemplo{
+    color: #2c1810;
+}
+
 .container {
     background: rgba(255, 255, 255, 0.95);
     padding: 40px;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - JVHG Barbearia</title>
+    <link rel="stylesheet" href="agendamento.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <h1>📅 Agendamento</h1>
+            <p class="subtitle">Escolha seu horário na JVHG Barbearia</p>
+            
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone/WhatsApp:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="horario">Horário:</label>
+            <select id="horario" name="horario" required>
+                <option value="">Selecione horário</option>
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+                <option value="11:00">11:00</option>
+                <option value="14:00">14:00</option>
+                <option value="14:30">14:30</option>
+                <option value="15:00">15:00</option>
+                <option value="15:30">15:30</option>
+                <option value="16:00">16:00</option>
+            </select>
+
+            <label for="servico">Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="">Selecione serviço</option>
+                <option value="corte">Corte R$ 45</option>
+                <option value="barba">Barba R$ 35</option>
+                <option value="combo">Corte + Barba R$ 70</option>
+                <option value="degrade">Degradê R$ 50</option>
+                <option value="navalha">Navalha R$ 40</option>
+            </select>
+
+            <button type="submit">Confirmar Agendamento</button>
+
+            <p class="links">
+                <a href="login.html">← Login</a> | 
+                <a href="cadastro.html">Cadastro</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
